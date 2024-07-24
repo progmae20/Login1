@@ -14,6 +14,13 @@
 		5D530E912C51719900DC804E /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530E902C51719900DC804E /* LoginTests.swift */; };
 		5D530E9B2C51719900DC804E /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530E9A2C51719900DC804E /* LoginUITests.swift */; };
 		5D530E9D2C51719900DC804E /* LoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530E9C2C51719900DC804E /* LoginUITestsLaunchTests.swift */; };
+		5D530EAA2C5175F500DC804E /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530EA92C5175F400DC804E /* Validations.swift */; };
+		5D530EB32C51760600DC804E /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530EAB2C51760500DC804E /* EmailTextField.swift */; };
+		5D530EB42C51760600DC804E /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530EAC2C51760500DC804E /* PasswordTextField.swift */; };
+		5D530EB52C51760600DC804E /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530EAE2C51760500DC804E /* AppService.swift */; };
+		5D530EB62C51760600DC804E /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530EAF2C51760500DC804E /* loginView.swift */; };
+		5D530EB72C51760600DC804E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530EB02C51760500DC804E /* RegistrationView.swift */; };
+		5D530EB82C51760600DC804E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530EB12C51760500DC804E /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		5D530E962C51719900DC804E /* LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D530E9A2C51719900DC804E /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		5D530E9C2C51719900DC804E /* LoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D530EA92C5175F400DC804E /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		5D530EAB2C51760500DC804E /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		5D530EAC2C51760500DC804E /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		5D530EAE2C51760500DC804E /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		5D530EAF2C51760500DC804E /* loginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		5D530EB02C51760500DC804E /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		5D530EB12C51760500DC804E /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +108,9 @@
 		5D530E7E2C51719300DC804E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5D530EB22C51760500DC804E /* View */,
 				5D530E7F2C51719300DC804E /* LoginApp.swift */,
+				5D530EA92C5175F400DC804E /* Validations.swift */,
 				5D530E812C51719300DC804E /* ContentView.swift */,
 				5D530E832C51719800DC804E /* Assets.xcassets */,
 				5D530E852C51719800DC804E /* Preview Content */,
@@ -125,6 +141,27 @@
 				5D530E9C2C51719900DC804E /* LoginUITestsLaunchTests.swift */,
 			);
 			path = LoginUITests;
+			sourceTree = "<group>";
+		};
+		5D530EAD2C51760500DC804E /* Login-Fields */ = {
+			isa = PBXGroup;
+			children = (
+				5D530EAB2C51760500DC804E /* EmailTextField.swift */,
+				5D530EAC2C51760500DC804E /* PasswordTextField.swift */,
+			);
+			path = "Login-Fields";
+			sourceTree = "<group>";
+		};
+		5D530EB22C51760500DC804E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D530EAD2C51760500DC804E /* Login-Fields */,
+				5D530EAE2C51760500DC804E /* AppService.swift */,
+				5D530EAF2C51760500DC804E /* loginView.swift */,
+				5D530EB02C51760500DC804E /* RegistrationView.swift */,
+				5D530EB12C51760500DC804E /* WelcomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D530EB42C51760600DC804E /* PasswordTextField.swift in Sources */,
+				5D530EB52C51760600DC804E /* AppService.swift in Sources */,
+				5D530EB62C51760600DC804E /* loginView.swift in Sources */,
+				5D530EB32C51760600DC804E /* EmailTextField.swift in Sources */,
+				5D530EB82C51760600DC804E /* WelcomeView.swift in Sources */,
 				5D530E822C51719300DC804E /* ContentView.swift in Sources */,
+				5D530EAA2C5175F500DC804E /* Validations.swift in Sources */,
 				5D530E802C51719300DC804E /* LoginApp.swift in Sources */,
+				5D530EB72C51760600DC804E /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
