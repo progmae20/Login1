@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5D530E802C51719300DC804E /* LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530E7F2C51719300DC804E /* LoginApp.swift */; };
-		5D530E822C51719300DC804E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530E812C51719300DC804E /* ContentView.swift */; };
 		5D530E842C51719800DC804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D530E832C51719800DC804E /* Assets.xcassets */; };
 		5D530E872C51719800DC804E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D530E862C51719800DC804E /* Preview Assets.xcassets */; };
 		5D530E912C51719900DC804E /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530E902C51719900DC804E /* LoginTests.swift */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		5D530E7C2C51719300DC804E /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D530E7F2C51719300DC804E /* LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApp.swift; sourceTree = "<group>"; };
-		5D530E812C51719300DC804E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D530E832C51719800DC804E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D530E862C51719800DC804E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5D530E8C2C51719900DC804E /* LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +109,6 @@
 				5D530EB22C51760500DC804E /* View */,
 				5D530E7F2C51719300DC804E /* LoginApp.swift */,
 				5D530EA92C5175F400DC804E /* Validations.swift */,
-				5D530E812C51719300DC804E /* ContentView.swift */,
 				5D530E832C51719800DC804E /* Assets.xcassets */,
 				5D530E852C51719800DC804E /* Preview Content */,
 			);
@@ -157,9 +154,9 @@
 			children = (
 				5D530EAD2C51760500DC804E /* Login-Fields */,
 				5D530EAE2C51760500DC804E /* AppService.swift */,
+				5D530EB12C51760500DC804E /* WelcomeView.swift */,
 				5D530EAF2C51760500DC804E /* loginView.swift */,
 				5D530EB02C51760500DC804E /* RegistrationView.swift */,
-				5D530EB12C51760500DC804E /* WelcomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,7 +296,6 @@
 				5D530EB62C51760600DC804E /* loginView.swift in Sources */,
 				5D530EB32C51760600DC804E /* EmailTextField.swift in Sources */,
 				5D530EB82C51760600DC804E /* WelcomeView.swift in Sources */,
-				5D530E822C51719300DC804E /* ContentView.swift in Sources */,
 				5D530EAA2C5175F500DC804E /* Validations.swift in Sources */,
 				5D530E802C51719300DC804E /* LoginApp.swift in Sources */,
 				5D530EB72C51760600DC804E /* RegistrationView.swift in Sources */,

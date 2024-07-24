@@ -115,21 +115,21 @@ struct BottomView: View {
                 Button {
                     googleAction()
                 } label: {
-                    Image("google-logo")
+                    Image(.googleLogo)
                 }
                 .iconButtonStyle
                 
                 Button {
                     facebookAction()
                 } label: {
-                    Image("facebook-logo")
+                    Image(.facebookLogo)
                 }
                 .iconButtonStyle
                 
                 Button {
                     appleAction()
                 } label: {
-                    Image("apple-logo")
+                    Image(.appleLogo)
                 }
                 .iconButtonStyle
             }

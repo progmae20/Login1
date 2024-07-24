@@ -19,7 +19,7 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Image ("work-from-home" )
+                Image (.workFromHome)
                     .resizable()
                     .scaledToFit()
                     .frame (width: 370)
@@ -30,7 +30,7 @@ struct WelcomeView: View {
                 Text ("Discover Your Dream Job Here")
                     .font(.system(size: 35, weight: .bold))
                     .multilineTextAlignment(.center)
-                    .foregroundColor (Color ("primaryBlue" ))
+                    .foregroundColor (Color (.primaryBlue))
                     .padding(.bottom, 8)
                 Text ("Explore all the existing job roles based on your interest and study major")
                     .font (.system(size: 14, weight: .regular))
@@ -49,7 +49,7 @@ struct WelcomeView: View {
                             .foregroundColor(.white)
                     }
                     .frame(width: 160, height: 60)
-                    .background (Color("primaryBlue"))
+                    .background (Color(.primaryBlue))
                     .cornerRadius (12)
                     
                     Button {
