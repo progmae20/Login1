@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RegistrationView: View {
+    
+    @EnvironmentObject var viewModel: ViewModel
+    @Environment(\.dismiss) var dismiss
   
     @State private var emailText = ""
     @State private var passwordText = ""
@@ -50,8 +53,11 @@ struct RegistrationView: View {
                         .padding(.top)
                     
                     Spacer()
-
+                    
                     Button {
+                        Task {
+                            try? await viewModel.createUser(email: emailText, password: passwordText)
+                        }
                         
                     } label: {
                         Text("Sign up")
@@ -86,6 +92,36 @@ struct RegistrationView: View {
             }
             .navigationBarBackButtonHidden(true)
         }
+        .alert(viewModel.hasError ? "Error" : "Success", isPresented: $viewModel.showAlert) {
+            if viewModel.hasError {
+                Button("Try Again") {}
+            } else {
+                Button("Ok") {
+                    dismiss()
+                }
+            }
+        } message: {
+            Text(viewModel.alertMessage)
+        }
+        .sheet(isPresented: $showSheet) {
+            LoginView()
+        }
+//        .alert(
+//            "Success",
+//            isPresented: $showAlert,
+//            presenting: "Your account has been created successfully!"
+//        ) { details in
+//            Button(role: .destructive) {
+//                // Handle the deletion.
+//            } label: {
+//                Text("Your account has been created successfully!")
+//            }
+//            Button("OK") {
+//            }
+//            .sheet(isPresented: $showSheet) {
+//                LoginView()
+//            }
+//        }
     }
     
     func validateConfirm(_ password: String) -> Bool {

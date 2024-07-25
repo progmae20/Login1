@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D42BC9F2C52A2AA00FD7A9C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42BC9E2C52A2AA00FD7A9C /* ViewModel.swift */; };
+		5D42BCA12C52BE3F00FD7A9C /* LoggedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42BCA02C52BE3F00FD7A9C /* LoggedView.swift */; };
 		5D530E802C51719300DC804E /* LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D530E7F2C51719300DC804E /* LoginApp.swift */; };
 		5D530E842C51719800DC804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D530E832C51719800DC804E /* Assets.xcassets */; };
 		5D530E872C51719800DC804E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D530E862C51719800DC804E /* Preview Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D42BC9E2C52A2AA00FD7A9C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5D42BCA02C52BE3F00FD7A9C /* LoggedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedView.swift; sourceTree = "<group>"; };
 		5D530E7C2C51719300DC804E /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D530E7F2C51719300DC804E /* LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApp.swift; sourceTree = "<group>"; };
 		5D530E832C51719800DC804E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,7 +56,7 @@
 		5D530EA92C5175F400DC804E /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		5D530EAB2C51760500DC804E /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		5D530EAC2C51760500DC804E /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
-		5D530EAE2C51760500DC804E /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		5D530EAE2C51760500DC804E /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppService.swift; path = View/AppService.swift; sourceTree = "<group>"; };
 		5D530EAF2C51760500DC804E /* loginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		5D530EB02C51760500DC804E /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		5D530EB12C51760500DC804E /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		5D530E7E2C51719300DC804E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5D530EAE2C51760500DC804E /* AppService.swift */,
+				5D42BC9E2C52A2AA00FD7A9C /* ViewModel.swift */,
 				5D530EB22C51760500DC804E /* View */,
 				5D530E7F2C51719300DC804E /* LoginApp.swift */,
 				5D530EA92C5175F400DC804E /* Validations.swift */,
@@ -153,10 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				5D530EAD2C51760500DC804E /* Login-Fields */,
-				5D530EAE2C51760500DC804E /* AppService.swift */,
 				5D530EB12C51760500DC804E /* WelcomeView.swift */,
 				5D530EAF2C51760500DC804E /* loginView.swift */,
 				5D530EB02C51760500DC804E /* RegistrationView.swift */,
+				5D42BCA02C52BE3F00FD7A9C /* LoggedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D42BCA12C52BE3F00FD7A9C /* LoggedView.swift in Sources */,
 				5D530EB42C51760600DC804E /* PasswordTextField.swift in Sources */,
+				5D42BC9F2C52A2AA00FD7A9C /* ViewModel.swift in Sources */,
 				5D530EB52C51760600DC804E /* AppService.swift in Sources */,
 				5D530EB62C51760600DC804E /* loginView.swift in Sources */,
 				5D530EB32C51760600DC804E /* EmailTextField.swift in Sources */,
