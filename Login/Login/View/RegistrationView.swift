@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    
     @EnvironmentObject var viewModel: ViewModel
     @Environment(\.dismiss) var dismiss
-  
+    
     @State private var emailText = ""
     @State private var passwordText = ""
     @State private var confirmPasswordText = ""
@@ -31,6 +30,9 @@ struct RegistrationView: View {
     var body: some View {
         NavigationStack {
             ZStack {
+                if viewModel.isLoading {
+                    ProgressView()
+                }
                 
                 VStack {
                     Text("Create Account")
@@ -58,7 +60,6 @@ struct RegistrationView: View {
                         Task {
                             try? await viewModel.createUser(email: emailText, password: passwordText)
                         }
-                        
                     } label: {
                         Text("Sign up")
                             .font(.system(size: 20, weight: .semibold))
@@ -89,6 +90,7 @@ struct RegistrationView: View {
                     
                     Spacer()
                 }
+                .opacity(viewModel.isLoading ? 0.5 : 1.0)
             }
             .navigationBarBackButtonHidden(true)
         }
@@ -106,22 +108,6 @@ struct RegistrationView: View {
         .sheet(isPresented: $showSheet) {
             LoginView()
         }
-//        .alert(
-//            "Success",
-//            isPresented: $showAlert,
-//            presenting: "Your account has been created successfully!"
-//        ) { details in
-//            Button(role: .destructive) {
-//                // Handle the deletion.
-//            } label: {
-//                Text("Your account has been created successfully!")
-//            }
-//            Button("OK") {
-//            }
-//            .sheet(isPresented: $showSheet) {
-//                LoginView()
-//            }
-//        }
     }
     
     func validateConfirm(_ password: String) -> Bool {

@@ -60,6 +60,7 @@
 		5D530EAF2C51760500DC804E /* loginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		5D530EB02C51760500DC804E /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		5D530EB12C51760500DC804E /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		5DD2DEE42C57EB4700682724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 		5D530E7E2C51719300DC804E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5DD2DEE42C57EB4700682724 /* Info.plist */,
 				5D530EAE2C51760500DC804E /* AppService.swift */,
 				5D42BC9E2C52A2AA00FD7A9C /* ViewModel.swift */,
 				5D530EB22C51760500DC804E /* View */,
@@ -255,6 +257,9 @@
 				Base,
 			);
 			mainGroup = 5D530E732C51719300DC804E;
+			packageReferences = (
+				5DD2DEE32C57EB0300682724 /* XCRemoteSwiftPackageReference "sdk-for-apple" */,
+			);
 			productRefGroup = 5D530E7D2C51719300DC804E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,6 +478,7 @@
 				DEVELOPMENT_TEAM = KMJH7PLV2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Login/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -502,6 +508,7 @@
 				DEVELOPMENT_TEAM = KMJH7PLV2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Login/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -636,6 +643,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DD2DEE32C57EB0300682724 /* XCRemoteSwiftPackageReference "sdk-for-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-apple";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 5D530E742C51719300DC804E /* Project object */;
 }

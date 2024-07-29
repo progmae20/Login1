@@ -24,7 +24,7 @@ struct LoggedView: View {
                     
                     Button {
                         Task {
-//                            try? await viewModel.logout(email: <#String#>)
+                            try? await viewModel.logout()
                             dismiss()
                         }
                     } label: {
